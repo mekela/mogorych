@@ -22,6 +22,7 @@
 	<script src="js/modernizr.custom.js"></script>
 	<script src="js/jquery.bxslider.min.js"></script>
 	<script src="http://api-maps.yandex.ru/2.0/?load=package.full&amp;lang=ru-RU" type="text/javascript"></script>
+	<script src="js/count.js"></script>
 	<script src="js/common.js"></script>
 	<!--[if IE]>  
 		<script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>  
@@ -82,8 +83,34 @@
 	<!--main-->
 	<div class="main">
 
+		
+
+		<!--action-->
+		<div class="action_wrap">
 		<div class="container">
+		<div class="action_inner">
+			<div class="action_title">Акция!</div>
+			<div class="action_description">
+				Каждому покупателю <b>качественный бутыль</b>
+				емкостью <b>1 литр - в подарок!</b>
+			</div>
+			<div class="timer">
+				<div id="timer"></div>
+				<nav>
+					<span>дней</span>
+					<span>часов</span>
+					<span>минут</span>
+					<span>секунд</span>
+				</nav>
+			</div>
+			<a href="#" class="button">Оставить заявку</a>
+			</div>
+			</div>
+		</div>
+		<!--end-action-->
+
 		<!--delivery-->
+		<div class="container">
 			<ul class="delivery_wrap">
 				<li class="delivery_inner">
 					<div class="delivery_icon">
@@ -119,8 +146,9 @@
 					</div>
 				</li>
 			</ul>
-		<!--end-delivery-->
 		</div>
+		<!--end-delivery-->
+		
 
 	</div>
 	<!--end-main-->

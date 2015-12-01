@@ -371,6 +371,80 @@ textarea {
   overflow: hidden;
 }
 
+/*-------------------action-----------------------*/
+.action_wrap {
+  background: url(../img/action-bg.jpg) no-repeat center top;
+  padding: 75px 0 80px;
+}
+.action_wrap .button {
+  clear: both;
+  float: right;
+}
+
+.action_inner {
+  background: #fff url(../img/action.jpg) no-repeat left top;
+  overflow: hidden;
+  height: 340px;
+  border: 10px solid #eaeff4;
+  padding-right: 25px;
+  padding-top: 10px;
+}
+
+.action_title {
+  color: #23a4f4;
+  font-size: 64px;
+  font-family: "Bebas Neue bold";
+  float: right;
+  margin-bottom: -10px;
+}
+
+.action_description {
+  color: #6c7a89;
+  font-size: 20px;
+  font-weight: 300;
+  text-align: right;
+  line-height: 1.45;
+  width: 420px;
+  float: right;
+  clear: both;
+  margin-bottom: 15px;
+}
+.action_description b {
+  color: #24a4f4;
+  font-weight: 700;
+}
+
+.timer {
+  background: #f6f6f7 url(../img/timer-bg.jpg) no-repeat left top;
+  padding: 15px 30px 12px 270px;
+  display: inline-block;
+  float: right;
+  clear: both;
+  margin-bottom: 12px;
+}
+
+#timer span {
+  font-size: 28px;
+  color: #424242;
+  width: 53px;
+  height: 51px;
+  line-height: 48px;
+  display: inline-block;
+  text-align: center;
+  vertical-align: middle;
+  margin-left: 8px;
+  background: url(../img/timer-item-bg.png) no-repeat center center;
+}
+
+.timer nav span {
+  font-size: 12px;
+  color: #364657;
+  display: inline-block;
+  width: 62px;
+  text-align: center;
+}
+
+/*-------------------end-action-----------------------*/
 /*-------------------delivery-----------------------*/
 .delivery_wrap {
   text-align: center;
@@ -405,7 +479,7 @@ textarea {
   font-weight: 700px;
 }
 
-/*-------------------end delivery-------------------*/
+/*-------------------end-delivery-------------------*/
 .footer {
   position: relative;
   overflow: hidden;

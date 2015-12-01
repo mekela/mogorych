@@ -64,6 +64,37 @@ $(document).ready(function() {
 	    } 
 	});
 
+//timer
+var today=new Date();
+var y = today.getFullYear();
+var m = today.getMonth() + 1;
+var d = (today.getDate());
+var h = 23-today.getHours();
+var mi = 59-today.getMinutes();
+var s = 59-today.getSeconds();
+if((d%2)==0){
+	var tl2 = new Date(y+'/'+m+'/'+d+' 23:59:59');
+}else{
+	if((d%1)==0){
+		var tl2 = new Date(y+'/'+m+'/'+(d+1)+' 23:59:59');
+	}
+}
+
+var countdown = new Countdown({
+	selector: '#timer',
+	msgBefore: "Скоро будет акция",
+	msgAfter: "Акция закончилась!",
+	msgPattern: "<span>{days}</span> <span>{hours}</span>  <span>{minutes}</span> <span>{seconds}</span>",
+	dateStart: new Date('2014/01/01 10:00'),
+	dateEnd: tl2,
+	onStart: function() {
+   //console.log('Акция!');
+ },
+ onEnd: function() {
+   //console.log('Кончилася!');
+ }
+});
+
 // map
 
 ymaps.ready(init); 
