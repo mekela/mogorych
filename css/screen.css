@@ -705,6 +705,64 @@ textarea {
   text-decoration: underline;
 }
 
+/*-------------------buy_aparat-----------------------*/
+.buy_aparat_wrap {
+  padding: 90px 0 80px;
+}
+
+.buy_aparat_title {
+  font-size: 48px;
+  font-family: "Bebas Neue bold";
+  color: #364657;
+  text-align: center;
+  margin-bottom: 80px;
+}
+
+.buy_aparat_block {
+  width: 280px;
+  padding: 20px 0 0;
+  text-align: center;
+  border: 10px solid #e5ebf1;
+  margin-right: 32px;
+  display: inline-block;
+}
+
+.buy_aparat_block:last-child {
+  margin-right: 0;
+}
+
+.buy_aparat_block-title {
+  font-size: 20px;
+  color: #364657;
+  line-height: 1.4;
+  margin-bottom: 25px;
+  padding: 0 20px;
+}
+
+.buy_aparat_img {
+  margin-bottom: 25px;
+  text-align: center;
+}
+
+.buy_aparat_footer {
+  background: #f6f6f7;
+  padding: 30px 0 40px;
+}
+.buy_aparat_footer .button {
+  display: inline-block;
+}
+
+.buy_aparat_price {
+  color: #364657;
+  font-size: 18px;
+  font-weight: 700;
+  margin-bottom: 30px;
+}
+.buy_aparat_price span {
+  color: #23a4f4;
+}
+
+/*-------------------end-buy_aparat-----------------------*/
 /*-------------------action-----------------------*/
 .action_wrap {
   background: url(../img/action-bg.jpg) no-repeat center top;
