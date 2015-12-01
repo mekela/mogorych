@@ -7,43 +7,37 @@ overflow: hidden;
 
 @mixin button($button){
   @include button_gradient('');
-  -webkit-border-radius: 28;
-  -moz-border-radius: 28;
-  border-radius: 28px;
   font-family: $ffamily;
-  color: #ffffff;
-  font-size: 20px;
+  color: #fff;
+  font-size: 21px;
   padding: 10px 20px 10px 20px;
   text-decoration: none;
   border: none;
+  border-radius: 3px;
+  box-shadow: 0 21px 34px -15px #abd6f6,0 2px 0 #2db2ff,inset 1px 1px 0 rgba(160,220,255,0.5);
 }
 @mixin button_gradient($button_gradient){
-  background: #3498db;
-  background-image: -webkit-linear-gradient(top, #3498db, #2980b9);
-  background-image: -moz-linear-gradient(top, #3498db, #2980b9);
-  background-image: -ms-linear-gradient(top, #3498db, #2980b9);
-  background-image: -o-linear-gradient(top, #3498db, #2980b9);
-  background-image: linear-gradient(to bottom, #3498db, #2980b9);
+  background-color: #1e77d0;
+  background-image: -moz-linear-gradient(95deg, #1d74ce 0%, #23abf9 100%);
+  background-image: -o-linear-gradient(95deg, #1d74ce 0%, #23abf9 100%);
+  background-image: -webkit-linear-gradient(95deg, #1d74ce 0%, #23abf9 100%);
+  background-image: linear-gradient(355deg, #1d74ce 0%, #23abf9 100%);
 }
 @mixin button_gradient_hover($button_gradient_hover){
-  background: #3cb0fd;
-  background-image: -webkit-linear-gradient(top, #3cb0fd, #3498db);
-  background-image: -moz-linear-gradient(top, #3cb0fd, #3498db);
-  background-image: -ms-linear-gradient(top, #3cb0fd, #3498db);
-  background-image: -o-linear-gradient(top, #3cb0fd, #3498db);
-  background-image: linear-gradient(to bottom, #3cb0fd, #3498db);
+  background: #23abf9;
 }
 
 @mixin input($input){
-  width: 300px;
-  height: 25px;
+  width: 312px;
+  height: 38px;
+  padding: 0 2px;
+  text-align: center;
   box-sizing: border-box;
-  padding: 0 5px;
-  color: #000;
-  font-size: 14px;
+  color: #292929;
+  font-size: 16px;
+  font-weight: 300;
   font-family: $ffamily;
-  border: 1px solid #000;
-  border-radius: 3px;
+  border: 1px solid #dfdfdf;
 }
 @mixin input_focus($input_focus){
   box-shadow: 0 0 2px #99e6f9;
@@ -59,7 +53,7 @@ $gradient: linear-gradient(to right, #d22beb 0%, #d22beb 0%, #1a94f2 100%);
 $white: #fff;
 $black: #000;
 $fsize: 14px;
-$ffamily:  'Arial';
+$ffamily:  'Roboto';
 
 //custom font family
 $fontfamily:  'Clear Sans';

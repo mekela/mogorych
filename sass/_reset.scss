@@ -144,11 +144,11 @@ textarea{
 .wrapper{
 @include povh('');
 margin:0 auto;
-width:1000px;
+min-width:970px;
 }
 
 .container{
-width:1000px;
+width:970px;
 margin:0 auto;
 @include povh('');
 }
