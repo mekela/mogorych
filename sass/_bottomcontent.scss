@@ -1,3 +1,35 @@
+/*-------------------delivery-----------------------*/
+
+.delivery_wrap {
+	text-align: center;
+	padding: 100px 0;
+}
+	.delivery_inner {
+		display: inline-block;
+		width: 33%;
+		text-align: center;
+		vertical-align: top;
+	}
+		.delivery_item {
+			font-size: 15px;
+			color: #364657;
+			strong {
+				font-weight: 700;
+			}
+		}
+		.delivery_icon {
+	    margin-bottom: 40px;
+	    height: 135px;
+	  }
+		.delivery_item.font-size_larger {
+			font-size: 24px;
+			font-weight: 300;
+			strong {
+				font-weight: 700px;
+			}
+		}
+
+/*-------------------end delivery-------------------*/
 
  //footer
  .footer{

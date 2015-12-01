@@ -371,6 +371,41 @@ textarea {
   overflow: hidden;
 }
 
+/*-------------------delivery-----------------------*/
+.delivery_wrap {
+  text-align: center;
+  padding: 100px 0;
+}
+
+.delivery_inner {
+  display: inline-block;
+  width: 33%;
+  text-align: center;
+  vertical-align: top;
+}
+
+.delivery_item {
+  font-size: 15px;
+  color: #364657;
+}
+.delivery_item strong {
+  font-weight: 700;
+}
+
+.delivery_icon {
+  margin-bottom: 40px;
+  height: 135px;
+}
+
+.delivery_item.font-size_larger {
+  font-size: 24px;
+  font-weight: 300;
+}
+.delivery_item.font-size_larger strong {
+  font-weight: 700px;
+}
+
+/*-------------------end delivery-------------------*/
 .footer {
   position: relative;
   overflow: hidden;
@@ -472,4 +507,5 @@ textarea {
   font-weight: 300;
   margin-bottom: 8px;
 }
+
 /*# sourceMappingURL=screen.css.map */
