@@ -64,4 +64,50 @@ $(document).ready(function() {
 	    } 
 	});
 
+// map
+
+ymaps.ready(init); 
+        var myMap; 
+        function init () { 
+            myMap = new ymaps.Map("map", { //див с id="map"
+                    center: [55.681433, 37.582480], // тут центр
+                    behaviors: ['default', 'scrollZoom'], // скроллинг колесом
+                    zoom: 14 // тут масштаб
+                });
+            myMap.controls // добавим всяких кнопок, в скобках их позиции в блоке
+        		.add('zoomControl', { left: 5, top: 5 }) //Масштаб
+        		.add('typeSelector') //Список типов карты
+        		.add('mapTools', { left: 35, top: 5 }) // Стандартный набор кнопок
+        		.add('searchControl'); // Строка с поиском
+	        /* Создаем кастомные метки */
+	        myPlacemark0 = new ymaps.Placemark([55.681433, 37.582480], { 
+	        // Создаем метку с такими координатами 
+	                // balloonContent: '<div class="ballon"><img src="img/hh.jpg" class="ll"/><span>Заголовок метки 1</span><br/><p>Немного инфы о том, о сем. Лорем ипсум чото там.</p><img class="close" onclick="myMap.balloon.close()" src="img/close.png"/></div>' // сдесь содержимое балуна в формате html, все стили в css
+	            	}, 
+	        {
+	            	iconImageHref: 'img/icons/map-label.png', // картинка иконки
+	            	iconImageSize: [54, 72], // размер иконки
+	            	iconImageOffset: [-32, -64], // позиция иконки
+	                // balloonContentSize: [270, 99], // размер нашего кастомного балуна в пикселях
+	                // balloonLayout: "default#imageWithContent", // указываем что содержимое балуна кастомное
+	                // balloonImageHref: 'img/ballon1.png', // Картинка заднего фона балуна
+	                // balloonImageOffset: [-65, -89], // смещание балуна, надо подогнать под стрелочку
+	                // balloonImageSize: [260, 89], // размер картинки-бэкграунда балуна
+	                // balloonShadow: false,
+	                // balloonAutoPan: false // для фикса кривого выравнивания
+	                });
+	        /* Добавляем */
+	        myMap.geoObjects
+	        	.add(myPlacemark0);
+
+	        /* Фикс кривого выравнивания кастомных балунов */
+			// myMap.geoObjects.events.add([
+		 //        'balloonopen'
+		 //    ], function (e) {
+		 //        var geoObject = e.get('target');
+		 //        myMap.panTo(geoObject.geometry.getCoordinates(), {
+		 //                                    delay: 0
+		 //                                });
+		 //    });
+    }
 });
