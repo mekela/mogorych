@@ -30,19 +30,43 @@
 <div class="wrapper">
 <!--header-->
 <header class="header">
-	
-		<form id="form1" onsubmit='return false' autocomplete="off" >
-			 <div class="field full clearfix"> <button  class="button send_button"  rel='form1' >send</button></div>
-			 <br>
- 			<input type="text" name="uname" class="validate" placeholder="Name" >
-            <input type="text" name="phone" class="validate" placeholder="Phone" >
-            <input type="text" name="email" class="validate" placeholder="Email" >
-           
+	<div class="fixed_header">
+		<div class="container">
+			<a href="/" class="logo"><img src="img/logo.png" alt=""></a>
+			<div class="header_phone">
+				<a href="tel:+74997046741" class="tel">+7 (499) 704-67-41</a>
+				<small>с  8.00 до 20.00 (Мск)</small>
+			</div>
+			<nav class="header_nav">
+				<ul>
+					<li><a href="#">Устройство аппарата</a></li>
+					<li><a href="#">Купить</a></li>
+					<li><a href="#">рецепты</a></li>
+					<li><a href="#">сертификаты</a></li>
+				</ul>
+			</nav>
+		</div>
+	</div>
+	<div class="container">
+		<div class="slogan">
+			<h6>АППАРАТЫ "МАГАРЫЧ" МАШКОВСКОГО <br>С БЕСПЛАТНОЙ ДОСТАВКОЙ ПО МОСКВЕ И МО</h6>
+			<div class="button">Делайте душистый и экологичный напиток своими руками</div>
+		</div>
+		<div class="main_form">
+			<form id="form1" onsubmit='return false' autocomplete="off" >
+				 <div class="field full clearfix"> <button  class="button send_button"  rel='form1' >send</button></div>
+				 <br>
+	 			<input type="text" name="uname" class="validate" placeholder="Name" >
+	            <input type="text" name="phone" class="validate" placeholder="Phone" >
+	            <input type="text" name="email" class="validate" placeholder="Email" >
+	           
 
-            <input class="form_name" type="hidden" name="form_name" value="Contact form"/>
-            <input type="hidden" name="action" value='send_form'/>
-            <input type="hidden" name="action_type" value='form_feedback'/>
-        </form>
+	            <input class="form_name" type="hidden" name="form_name" value="Contact form"/>
+	            <input type="hidden" name="action" value='send_form'/>
+	            <input type="hidden" name="action_type" value='form_feedback'/>
+	        </form>
+	    </div>    
+    </div>    
 </header>
 <!--end-header-->
 <!--main-->
