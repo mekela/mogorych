@@ -22,6 +22,7 @@
 	<script src="js/modernizr.custom.js"></script>
 	<script src="js/jquery.bxslider.min.js"></script>
 	<script src="http://api-maps.yandex.ru/2.0/?load=package.full&amp;lang=ru-RU" type="text/javascript"></script>
+	<script src="js/count.js"></script>
 	<script src="js/common.js"></script>
 	<!--[if IE]>  
 		<script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>  
@@ -276,20 +277,145 @@
 			</div>
 		</div>
 	</div>
-	<!--delivery-->
-	<div class="container">
-		<ul class="delivery_wrap">
-			<li class="delivery_inner">
-				<div class="delivery_icon">
-					<img src="img/truck.png">
+				<div class="main_form">
+					<form id="form1" onsubmit='return false' autocomplete="off" >
+						<div class="field full clearfix"> <button  class="button send_button"  rel='form1' >send</button></div>
+						<br>
+						<input type="text" name="uname" class="validate" placeholder="Name" >
+						<input type="text" name="phone" class="validate" placeholder="Phone" >
+						<input type="text" name="email" class="validate" placeholder="Email" >
+
+
+						<input class="form_name" type="hidden" name="form_name" value="Contact form"/>
+						<input type="hidden" name="action" value='send_form'/>
+						<input type="hidden" name="action_type" value='form_feedback'/>
+					</form>
+				</div>    
+			</div>    
+		</header>
+		<!--end-header-->
+		<!--main-->
+		<div class="main">
+			<input class="form_name" type="hidden" name="form_name" value="Contact form"/>
+			<input type="hidden" name="action" value='send_form'/>
+			<input type="hidden" name="action_type" value='form_feedback'/>
+		</form>
+	</header>
+	<!--end-header-->
+	<!--main-->
+	<div class="main">
+
+		<!--questions-->
+			<div class="questions_wrap">
+			<div class="container">
+				<div class="title">Часто задаваемые вопросы</div>
+				<div class="questions_inner">
+					<div class="qestions_block">
+					<div class="questions_title">Вопрос</div>
+					<div class="questions_title">Ответ</div>
+						<dl>
+							<dt>Законно ли варение на дому?</dt>
+							<dd>Закон разрешает гражданам заниматься варением
+							только в том случае, если весь произведенный домашний напиток не будет использоваться для продажи или иного извлечения прибыли.</dd>
+							<dt>Какая высота аппарата в собранном виде?</dt>
+							<dd>Высота около 62 см. в сборе.</dd>
+							<dt>Сколько весит аппарат?</dt>
+							<dd>Вес аппарата составляет примерно 4 кг.</dd>
+							<dt>Как крепится крышка аппарата, не сорвет ли её от избыточного давления?</dt>
+							<dd>Крышка аппаратов на резьбе.
+							А давление, которое способно сорвать крышку, в аппарате не возникает.</dd>
+							<dt>А не поведет ли стенки аппарата при сильном нагреве?</dt>
+							<dd>Толщины дна и стенок хватает с избытком для эксплуатации на любых плитах, в том числе газовых.</dd>
+							<dt>Сколько термометров?</dt>
+							<dd>На аппаратах устанавливается по одному термометру.
+							На аппарате Машковского экспорт электронный термометр.</dd>
+						</dl>
+					</div>
 				</div>
-				<div class="delivery_block">
-					<div class="delivery_item">
-						<strong>Доставка по Москве:</strong> завтра, бесплатно
+			</div>
+			</div>
+		<!--end-questions-->
+
+		<!--buy_aparat-->
+		<div class="buy_aparat_wrap">
+			<div class="container">
+				<div class="title">
+					Купить аппарат Машковского
+				</div>
+				<ul class="buy_aparat_inner">
+					<li class="buy_aparat_block">
+						<div class="buy_aparat_title">Аппарат Машковского 12 и 20 л.</div>
+						<div class="buy_aparat_img">
+							<img src="img/apparatus-1.jpg">
+						</div>
+						<div class="buy_aparat_footer">
+							<div class="buy_aparat_price">Цена: 7600р <span>\</span> 8600р</div>
+							<a href="#" class="button">Подробнее</a>
+						</div>
+					</li>
+					<li class="buy_aparat_block">
+						<div class="buy_aparat_title">Аппарат Машковского 12 и 20 л.</div>
+						<div class="buy_aparat_img">
+							<img src="img/apparatus-2.jpg">
+						</div>
+						<div class="buy_aparat_footer">
+							<div class="buy_aparat_price">Цена: 7990р <span>\</span> 8990р</div>
+							<a href="#" class="button">Подробнее</a>
+						</div>
+					</li>
+					<li class="buy_aparat_block">
+						<div class="buy_aparat_title">Аппарат Машковского Экспорт с ТЭН 21 и 36 л.</div>
+						<div class="buy_aparat_img">
+							<img src="img/apparatus-3.jpg">
+						</div>
+						<div class="buy_aparat_footer">
+							<div class="buy_aparat_price">Цена: 14750р <span>\</span> 16750р</div>
+							<a href="#" class="button">Подробнее</a>
+						</div>
+					</li>
+				</ul>
+			</div>
+		</div>
+		<!--end-buy_aparat-->
+
+		<!--action-->
+		<div class="action_wrap">
+		<div class="container">
+		<div class="action_inner">
+			<div class="action_title">Акция!</div>
+			<div class="action_description">
+				Каждому покупателю <b>качественный бутыль</b>
+				емкостью <b>1 литр - в подарок!</b>
+			</div>
+			<div class="timer">
+				<div id="timer"></div>
+				<nav>
+					<span>дней</span>
+					<span>часов</span>
+					<span>минут</span>
+					<span>секунд</span>
+				</nav>
+			</div>
+			<a href="#" class="button">Оставить заявку</a>
+			</div>
+			</div>
+		</div>
+		<!--end-action-->
+
+		<!--delivery-->
+		<div class="container">
+			<ul class="delivery_wrap">
+				<li class="delivery_inner">
+					<div class="delivery_icon">
+						<img src="img/truck.png">
 					</div>
-					<div class="delivery_item">
-						<strong>Доставка по России:</strong> 2-7 дней, 300 руб.
-					</div>
+					<div class="delivery_block">
+						<div class="delivery_item">
+							<strong>Доставка по Москве:</strong> завтра, бесплатно
+						</div>
+						<div class="delivery_item">
+							<strong>Доставка по России:</strong> 2-7 дней, 300 руб.
+						</div>
 				</div>
 			</li>
 			<li class="delivery_inner">
@@ -310,6 +436,10 @@
 					<div class="delivery_item font-size_larger">
 						<strong>Возврат товара:</strong> 14 дней
 					</div>
+				</li>
+			</ul>
+		</div>
+		<!--end-delivery-->
 				</div>
 			</li>
 		</ul>

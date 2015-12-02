@@ -1,5 +1,168 @@
-/*-------------------delivery-----------------------*/
+/*-------------------questions-----------------------*/
+.questions_wrap {
+	padding-top: 60px;
+	background: url(../img/questions-bg.jpg) no-repeat center top;
+}
+	.questions_inner {
+		background: url(../img/questions-inner-bg.jpg) no-repeat center top;
+	}
+		.questions_title {
+	    font-size: 30px;
+	    font-weight: 700;
+	    color: #23a4f4;
+	    display: inline-block;
+	    margin: 30px 130px 60px;
+		}
+		.qestions_block {
+			overflow: hidden;
+			text-align: center;
+			dl {
+				text-align: left;
+				margin: 0 auto;
+				width: 92%;
+			}
+			dt {
+				font-size: 22px;
+				color: #fff;
+				font-weight: 700;
+				float: left;
+				width: 390px;
+				clear: both;
+				line-height: normal;
+				margin-bottom: 20px;
+			}
+			dd {
+				font-size: 16px;
+				color: #fff;
+				font-weight: 300;
+				margin-bottom: 50px;
+				width: 415px;
+				float: right;
+			}
+		}
 
+/*-------------------end-questions-----------------------*/
+
+/*-------------------buy_aparat-----------------------*/
+.buy_aparat_wrap {
+	padding: 90px 0 80px;
+}
+	// .buy_aparat_title {
+	// 	font-size: 48px;
+	// 	font-family: $bold;
+	// 	color: #364657;
+	// 	text-align: center;
+	// 	margin-bottom: 80px;
+	// }
+	.buy_aparat_block {
+		width: 280px;
+		padding: 20px 0 0;
+		text-align: center;
+		border: 10px solid #e5ebf1;
+		margin-right: 32px;
+		display: inline-block;
+	}
+	.buy_aparat_block:last-child {
+		margin-right: 0;
+	}
+		.buy_aparat_title {
+			font-size: 20px;
+			color: #364657;
+			line-height: 1.4;
+			margin-bottom: 25px;
+			padding: 0 20px;
+		}
+		.buy_aparat_img {
+	    margin-bottom: 25px;
+	    text-align: center;
+		}
+		.buy_aparat_footer {
+			background: #f6f6f7;
+			padding: 30px 0 40px;
+			.button {
+				display: inline-block;
+			}
+		}
+			.buy_aparat_price {
+				color: #364657;
+				font-size: 18px;
+				font-weight: 700;
+				margin-bottom: 30px;
+				span {
+					color: #23a4f4;
+				}
+			}
+/*-------------------end-buy_aparat-----------------------*/
+
+/*-------------------action-----------------------*/
+.action_wrap {
+	background: url(../img/action-bg.jpg) no-repeat center top;
+	padding: 75px 0 80px;
+  .button {
+  	clear: both;
+  	float: right;
+  }
+}
+	.action_inner {
+    background: #fff url(../img/action.jpg) no-repeat left top;
+    overflow: hidden;
+    height: 340px; 
+    border: 10px solid #eaeff4;
+    padding-right: 25px;
+    padding-top: 10px;
+	}
+		.action_title {
+			color: #23a4f4;
+			font-size: 64px;
+			font-family: $bold;
+			float: right;
+			margin-bottom: -10px;
+		}
+		.action_description {
+			color: #6c7a89;
+			font-size: 20px;
+			font-weight: 300;
+			text-align: right;
+			line-height: 1.45;
+			width: 420px;
+			float: right;
+			clear: both;
+			margin-bottom: 15px;
+			b {
+				color: #24a4f4;
+				font-weight: 700;
+			}
+		}
+		.timer {
+			background: #f6f6f7 url(../img/timer-bg.jpg) no-repeat left top;
+			padding: 15px 30px 12px 270px;
+			display: inline-block;
+			float: right;
+			clear: both;
+			margin-bottom: 12px;
+		}
+			#timer span {
+				font-size: 28px;
+				color: #424242;
+				width: 53px;
+				height: 51px;
+				line-height: 48px;
+				display: inline-block;
+				text-align: center;
+				vertical-align: middle;
+				margin-left: 8px;
+				background: url(../img/timer-item-bg.png) no-repeat center center;
+			}
+				.timer nav span {
+					font-size: 12px;
+					color: #364657;
+					display: inline-block;
+					width: 62px;
+					text-align: center;
+				}
+/*-------------------end-action-----------------------*/
+
+/*-------------------delivery-----------------------*/
 .delivery_wrap {
 	text-align: center;
 	padding: 100px 0;
@@ -28,8 +191,7 @@
 				font-weight: 700px;
 			}
 		}
-
-/*-------------------end delivery-------------------*/
+/*-------------------end-delivery-------------------*/
 
  //footer
  .footer{
@@ -125,3 +287,4 @@
  		font-weight: 300;
  		margin-bottom: 8px;
  	}
+ //end-footer
