@@ -705,17 +705,56 @@ textarea {
   text-decoration: underline;
 }
 
+/*-------------------questions-----------------------*/
+.questions_wrap {
+  padding-top: 60px;
+  background: url(../img/questions-bg.jpg) no-repeat center top;
+}
+
+.questions_inner {
+  background: url(../img/questions-inner-bg.jpg) no-repeat center top;
+}
+
+.questions_title {
+  font-size: 30px;
+  font-weight: 700;
+  color: #23a4f4;
+  display: inline-block;
+  margin: 30px 130px 60px;
+}
+
+.qestions_block {
+  overflow: hidden;
+  text-align: center;
+}
+.qestions_block dl {
+  text-align: left;
+  margin: 0 auto;
+  width: 92%;
+}
+.qestions_block dt {
+  font-size: 22px;
+  color: #fff;
+  font-weight: 700;
+  float: left;
+  width: 390px;
+  clear: both;
+  line-height: normal;
+  margin-bottom: 20px;
+}
+.qestions_block dd {
+  font-size: 16px;
+  color: #fff;
+  font-weight: 300;
+  margin-bottom: 50px;
+  width: 415px;
+  float: right;
+}
+
+/*-------------------end-questions-----------------------*/
 /*-------------------buy_aparat-----------------------*/
 .buy_aparat_wrap {
   padding: 90px 0 80px;
-}
-
-.buy_aparat_title {
-  font-size: 48px;
-  font-family: "Bebas Neue bold";
-  color: #364657;
-  text-align: center;
-  margin-bottom: 80px;
 }
 
 .buy_aparat_block {
@@ -731,7 +770,7 @@ textarea {
   margin-right: 0;
 }
 
-.buy_aparat_block-title {
+.buy_aparat_title {
   font-size: 20px;
   color: #364657;
   line-height: 1.4;
