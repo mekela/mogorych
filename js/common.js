@@ -9,11 +9,38 @@ $(document).ready(function() {
 	});
 
 	//bxslider
-	$('.bxslider').bxSlider({
-	  nextSelector: '#slider-next',
-	  prevSelector: '#slider-prev',
-	  nextText: 'Onward →',
-	  prevText: '← Go back'
+	$('#modal_product_slider1').bxSlider({
+	  nextSelector: '#modal_product_right1',
+	  prevSelector: '#modal_product_left1',
+	  pager: false,
+	  slideWidth: 230,
+	  minSlides: 1,
+	  maxSlides: 2,
+	  slideMargin: 10
+	});
+	$('#modal_product_slider2').bxSlider({
+	  nextSelector: '#modal_product_right2',
+	  prevSelector: '#modal_product_left2',
+	  pager: false,
+	  slideWidth: 230,
+	  minSlides: 1,
+	  maxSlides: 2,
+	  slideMargin: 10
+	});
+	$('#modal_product_slider3').bxSlider({
+	  nextSelector: '#modal_product_right3',
+	  prevSelector: '#modal_product_left3',
+	  pager: false,
+	  slideWidth: 230,
+	  minSlides: 1,
+	  maxSlides: 2,
+	  slideMargin: 10
+	});
+
+	 //scroll anchor
+    $('.header_nav li a').on('click',function(){
+		$('html,body').animate({scrollTop:$($(this).attr('href')).offset().top-60},800);
+		return false;
 	});
 
 	/* - - - - - - - - - - - - - -   valid  - - - - - - - - - - - - - - - - */

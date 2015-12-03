@@ -16,7 +16,7 @@
 		
 			$emessage = "
 			<html>
-				Name:".$uname."<br/>Phone:".$phone."<br/>Email:".$email."
+				Имя:".$uname."<br/>Телефон:".$phone1." ".$phone2." ".$phone3."
 			</html>";
 		}						
 			$headers  = "Content-type: text/html; charset=utf-8 \r\n";

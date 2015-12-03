@@ -4,8 +4,8 @@
 	<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
 	<meta name="description" content="">
 	<meta name="keywords" content="">
-	<meta name="viewport" content="initial-scale=1"/>
-	<title>title</title>
+	<meta name="viewport" content="width=1024">
+	<title>АППАРАТЫ "МАГАРЫЧ" МАШКОВСКОГО</title>
 	<!--Favicon-->
 	<link rel="icon" type="image/png" href="favicon.ico">
 	<!--End Favicon-->
@@ -17,7 +17,7 @@
 	<link href="css/style.css" rel="stylesheet" media="screen">
 	<!-- END OF CSS -->
 	<!--SCRIPT -->
-	<script src="http://ajax.googleapis.com/ajax/libs/jquery/1/jquery.min.js"></script>
+	<script src="js/jquery.js"></script>
 	<script src="js/jquery.fancybox.pack.js"></script>
 	<script src="js/modernizr.custom.js"></script>
 	<script src="js/jquery.bxslider.min.js"></script>
@@ -42,10 +42,10 @@
 			</div>
 			<nav class="header_nav">
 				<ul>
-					<li><a href="#">Устройство аппарата</a></li>
-					<li><a href="#">Купить</a></li>
-					<li><a href="#">рецепты</a></li>
-					<li><a href="#">сертификаты</a></li>
+					<li><a href="#aparat">Устройство аппарата</a></li>
+					<li><a href="#buy">Купить</a></li>
+					<li><a href="#recipes">рецепты</a></li>
+					<li><a href="#sert">сертификаты</a></li>
 				</ul>
 			</nav>
 		</div>
@@ -70,7 +70,7 @@
 		        </div>    
 	           	<button  class="button send_button"  rel='form1' >Оставить заявку</button>
 
-	            <input class="form_name" type="hidden" name="form_name" value="Contact form"/>
+	            <input class="form_name" type="hidden" name="form_name" value="Заявка"/>
 	            <input type="hidden" name="action" value='send_form'/>
 	            <input type="hidden" name="action_type" value='form_feedback'/>
 	        </form>
@@ -80,6 +80,7 @@
 <!--end-header-->
 <!--main-->
 <div class="main">
+	<!--statistic-->
 	<div class="container statistic_wrap">
 		<section class="statistic_block">
 			<h6>65,5%</h6>
@@ -95,6 +96,8 @@
 			метанол 0,05% (ГОСТ – 0,03%)</p>
 		</section>
 	</div>
+	<!--end statistic-->
+	<!--request-->
 	<div class="leave_request_wrap">
 		<div class="container">
 			<div class="main_form">
@@ -112,14 +115,17 @@
 			        </div>    
 		           	<button  class="button send_button"  rel='form2' >Оставить заявку</button>
 
-		            <input class="form_name" type="hidden" name="form_name" value="Contact form"/>
+		            <input class="form_name" type="hidden" name="form_name" value="Заявка"/>
 		            <input type="hidden" name="action" value='send_form'/>
 		            <input type="hidden" name="action_type" value='form_feedback'/>
 		        </form>
 		    </div> 
 		</div>
 	</div>
-	<div class="tags_wrap">
+	<!--end request-->
+
+	<!--tags-->
+	<div class="tags_wrap" id="recipes">
 		<div class="container">
 			<div class="title">простой рецепт напитка с аппаратом машковского</div>
 			<div class="tags_block">
@@ -146,6 +152,9 @@
 			</div>
 		</div>
 	</div>
+	<!--end tags-->
+
+	<!--specifications-->
 	<div class="specifications_wrap">
 		<div class="container">
 			<div class="title">Технические характеристики</div>
@@ -179,7 +188,9 @@
 			</article>
 		</div>
 	</div>
-	<div class="aparat_wrap">
+	<!--end specifications-->
+
+	<div class="aparat_wrap" id="aparat">
 		<div class="container">
 			<div class="title">Устройство аппарата</div>
 			<div class="aparat_img">
@@ -187,6 +198,8 @@
 			</div>
 		</div>
 	</div>
+
+	<!--developer-->
 	<div class="developer_wrap">
 		<div class="container">
 			<div class="title">Кто и как придумал такой простой, <br>но гениальный аппарат?</div>
@@ -230,7 +243,10 @@
 			</article>
 		</div>	
 	</div>
-	<div class="sert_wrap">
+	<!--end developer-->
+
+	<!--sertificate-->
+	<div class="sert_wrap" id="sert">
 		<div class="container">
 			<div class="sert_title">
 				Аппарат <br> Машковского <br>
@@ -241,6 +257,9 @@
 			<a href="img/sert.png" class="fancybox"><img src="img/sert.png" alt=""></a>
 		</div>
 	</div>
+	<!--end sertificate-->
+
+	<!--news-->
 	<div class="news_wrap">
 		<div class="container">
 			<div class="news_video">
@@ -277,169 +296,138 @@
 			</div>
 		</div>
 	</div>
-				<div class="main_form">
-					<form id="form1" onsubmit='return false' autocomplete="off" >
-						<div class="field full clearfix"> <button  class="button send_button"  rel='form1' >send</button></div>
-						<br>
-						<input type="text" name="uname" class="validate" placeholder="Name" >
-						<input type="text" name="phone" class="validate" placeholder="Phone" >
-						<input type="text" name="email" class="validate" placeholder="Email" >
+	<!--end news-->
 
-
-						<input class="form_name" type="hidden" name="form_name" value="Contact form"/>
-						<input type="hidden" name="action" value='send_form'/>
-						<input type="hidden" name="action_type" value='form_feedback'/>
-					</form>
-				</div>    
-			</div>    
-		</header>
-		<!--end-header-->
-		<!--main-->
-		<div class="main">
-			<input class="form_name" type="hidden" name="form_name" value="Contact form"/>
-			<input type="hidden" name="action" value='send_form'/>
-			<input type="hidden" name="action_type" value='form_feedback'/>
-		</form>
-	</header>
-	<!--end-header-->
-	<!--main-->
-	<div class="main">
-
-		<!--questions-->
-			<div class="questions_wrap">
-			<div class="container">
-				<div class="title">Часто задаваемые вопросы</div>
-				<div class="questions_inner">
-					<div class="qestions_block">
-					<div class="questions_title">Вопрос</div>
-					<div class="questions_title">Ответ</div>
-						<dl>
-							<dt>Законно ли варение на дому?</dt>
-							<dd>Закон разрешает гражданам заниматься варением
-							только в том случае, если весь произведенный домашний напиток не будет использоваться для продажи или иного извлечения прибыли.</dd>
-							<dt>Какая высота аппарата в собранном виде?</dt>
-							<dd>Высота около 62 см. в сборе.</dd>
-							<dt>Сколько весит аппарат?</dt>
-							<dd>Вес аппарата составляет примерно 4 кг.</dd>
-							<dt>Как крепится крышка аппарата, не сорвет ли её от избыточного давления?</dt>
-							<dd>Крышка аппаратов на резьбе.
-							А давление, которое способно сорвать крышку, в аппарате не возникает.</dd>
-							<dt>А не поведет ли стенки аппарата при сильном нагреве?</dt>
-							<dd>Толщины дна и стенок хватает с избытком для эксплуатации на любых плитах, в том числе газовых.</dd>
-							<dt>Сколько термометров?</dt>
-							<dd>На аппаратах устанавливается по одному термометру.
-							На аппарате Машковского экспорт электронный термометр.</dd>
-						</dl>
-					</div>
+	<!--questions-->
+	<div class="questions_wrap">
+		<div class="container">
+			<div class="title">Часто задаваемые вопросы</div>
+			<div class="questions_inner">
+				<div class="qestions_block">
+				<div class="questions_title">Вопрос</div>
+				<div class="questions_title">Ответ</div>
+					<dl>
+						<dt>Законно ли варение на дому?</dt>
+						<dd>Закон разрешает гражданам заниматься варением
+						только в том случае, если весь произведенный домашний напиток не будет использоваться для продажи или иного извлечения прибыли.</dd>
+						<dt>Какая высота аппарата в собранном виде?</dt>
+						<dd>Высота около 62 см. в сборе.</dd>
+						<dt>Сколько весит аппарат?</dt>
+						<dd>Вес аппарата составляет примерно 4 кг.</dd>
+						<dt>Как крепится крышка аппарата, не сорвет ли её от избыточного давления?</dt>
+						<dd>Крышка аппаратов на резьбе.
+						А давление, которое способно сорвать крышку, в аппарате не возникает.</dd>
+						<dt>А не поведет ли стенки аппарата при сильном нагреве?</dt>
+						<dd>Толщины дна и стенок хватает с избытком для эксплуатации на любых плитах, в том числе газовых.</dd>
+						<dt>Сколько термометров?</dt>
+						<dd>На аппаратах устанавливается по одному термометру.
+						На аппарате Машковского экспорт электронный термометр.</dd>
+					</dl>
 				</div>
-			</div>
-			</div>
-		<!--end-questions-->
-
-		<!--buy_aparat-->
-		<div class="buy_aparat_wrap">
-			<div class="container">
-				<div class="title">
-					Купить аппарат Машковского
-				</div>
-				<ul class="buy_aparat_inner">
-					<li class="buy_aparat_block">
-						<div class="buy_aparat_title">Аппарат Машковского 12 и 20 л.</div>
-						<div class="buy_aparat_img">
-							<img src="img/apparatus-1.jpg">
-						</div>
-						<div class="buy_aparat_footer">
-							<div class="buy_aparat_price">Цена: 7600р <span>\</span> 8600р</div>
-							<a href="#" class="button">Подробнее</a>
-						</div>
-					</li>
-					<li class="buy_aparat_block">
-						<div class="buy_aparat_title">Аппарат Машковского 12 и 20 л.</div>
-						<div class="buy_aparat_img">
-							<img src="img/apparatus-2.jpg">
-						</div>
-						<div class="buy_aparat_footer">
-							<div class="buy_aparat_price">Цена: 7990р <span>\</span> 8990р</div>
-							<a href="#" class="button">Подробнее</a>
-						</div>
-					</li>
-					<li class="buy_aparat_block">
-						<div class="buy_aparat_title">Аппарат Машковского Экспорт с ТЭН 21 и 36 л.</div>
-						<div class="buy_aparat_img">
-							<img src="img/apparatus-3.jpg">
-						</div>
-						<div class="buy_aparat_footer">
-							<div class="buy_aparat_price">Цена: 14750р <span>\</span> 16750р</div>
-							<a href="#" class="button">Подробнее</a>
-						</div>
-					</li>
-				</ul>
 			</div>
 		</div>
-		<!--end-buy_aparat-->
+	</div>
+	<!--end-questions-->
 
-		<!--action-->
-		<div class="action_wrap">
+	<!--buy_aparat-->
+	<div class="buy_aparat_wrap" id="buy">
 		<div class="container">
-		<div class="action_inner">
-			<div class="action_title">Акция!</div>
-			<div class="action_description">
-				Каждому покупателю <b>качественный бутыль</b>
-				емкостью <b>1 литр - в подарок!</b>
+			<div class="title">
+				Купить аппарат Машковского
 			</div>
-			<div class="timer">
-				<div id="timer"></div>
-				<nav>
-					<span>дней</span>
-					<span>часов</span>
-					<span>минут</span>
-					<span>секунд</span>
-				</nav>
-			</div>
-			<a href="#" class="button">Оставить заявку</a>
-			</div>
-			</div>
-		</div>
-		<!--end-action-->
-
-		<!--delivery-->
-		<div class="container">
-			<ul class="delivery_wrap">
-				<li class="delivery_inner">
-					<div class="delivery_icon">
-						<img src="img/truck.png">
+			<ul class="buy_aparat_inner">
+				<li class="buy_aparat_block">
+					<div class="buy_aparat_title">Аппарат Машковского 12 и 20 л.</div>
+					<div class="buy_aparat_img">
+						<img src="img/apparatus-1.jpg">
 					</div>
-					<div class="delivery_block">
-						<div class="delivery_item">
-							<strong>Доставка по Москве:</strong> завтра, бесплатно
-						</div>
-						<div class="delivery_item">
-							<strong>Доставка по России:</strong> 2-7 дней, 300 руб.
-						</div>
-				</div>
-			</li>
-			<li class="delivery_inner">
-				<div class="delivery_icon">
-					<img src="img/guarantee.png">
-				</div>
-				<div class="delivery_block">
-					<div class="delivery_item font-size_larger">
-						<strong>Гарантия 1 год</strong>
+					<div class="buy_aparat_footer">
+						<div class="buy_aparat_price">Цена: 7600р <span>\</span> 8600р</div>
+						<a href="#modal_product" class="fancybox button">Подробнее</a>
 					</div>
-				</div>
-			</li>
-			<li class="delivery_inner">
-				<div class="delivery_icon">
-					<img src="img/purchase-returns.png">
-				</div>
-				<div class="delivery_block">
-					<div class="delivery_item font-size_larger">
-						<strong>Возврат товара:</strong> 14 дней
+				</li>
+				<li class="buy_aparat_block">
+					<div class="buy_aparat_title">Аппарат Машковского 12 и 20 л.</div>
+					<div class="buy_aparat_img">
+						<img src="img/apparatus-2.jpg">
+					</div>
+					<div class="buy_aparat_footer">
+						<div class="buy_aparat_price">Цена: 7990р <span>\</span> 8990р</div>
+						<a href="#modal_product2" class="fancybox button">Подробнее</a>
+					</div>
+				</li>
+				<li class="buy_aparat_block">
+					<div class="buy_aparat_title">Аппарат Машковского Экспорт с ТЭН 21 и 36 л.</div>
+					<div class="buy_aparat_img">
+						<img src="img/apparatus-3.jpg">
+					</div>
+					<div class="buy_aparat_footer">
+						<div class="buy_aparat_price">Цена: 14750р <span>\</span> 16750р</div>
+						<a href="#modal_product3" class="fancybox button">Подробнее</a>
 					</div>
 				</li>
 			</ul>
 		</div>
-		<!--end-delivery-->
+	</div>
+	<!--end-buy_aparat-->
+
+	<!--action-->
+	<div class="action_wrap">
+		<div class="container">
+			<div class="action_inner">
+				<div class="action_title">Акция!</div>
+				<div class="action_description">
+					Каждому покупателю <b>качественный бутыль</b>
+					емкостью <b>1 литр - в подарок!</b>
+				</div>
+				<div class="timer">
+					<div id="timer"></div>
+					<nav>
+						<span>дней</span>
+						<span>часов</span>
+						<span>минут</span>
+						<span>секунд</span>
+					</nav>
+				</div>
+				<a href="#modal_request" class="fancybox button">Оставить заявку</a>
+			</div>
+		</div>
+	</div>
+	<!--end-action-->
+
+	<!--delivery-->
+	<div class="container">
+		<ul class="delivery_wrap">
+			<li class="delivery_inner">
+				<div class="delivery_icon">
+					<img src="img/truck.png">
+				</div>
+				<div class="delivery_block">
+					<div class="delivery_item">
+						<strong>Доставка по Москве:</strong> завтра, бесплатно
+					</div>
+					<div class="delivery_item">
+						<strong>Доставка по России:</strong> 2-7 дней, 300 руб.
+					</div>
+			</div>
+		</li>
+		<li class="delivery_inner">
+			<div class="delivery_icon">
+				<img src="img/guarantee.png">
+			</div>
+			<div class="delivery_block">
+				<div class="delivery_item font-size_larger">
+					<strong>Гарантия 1 год</strong>
+				</div>
+			</div>
+		</li>
+		<li class="delivery_inner">
+			<div class="delivery_icon">
+				<img src="img/purchase-returns.png">
+			</div>
+			<div class="delivery_block">
+				<div class="delivery_item font-size_larger">
+					<strong>Возврат товара:</strong> 14 дней
 				</div>
 			</li>
 		</ul>
@@ -450,7 +438,6 @@
 <!--footer-->
 <footer class="footer">
 	<div class="contacts_wrapper">
-		<div id="map"></div>
 		<div class="container">
 			<div class="contacts_inner">
 				<div class="contacts_title">Наш адрес:</div>
@@ -465,6 +452,8 @@
 				<div class="contacts_phone">+7 (499) 704-67-41</div>
 			</div>
 		</div>
+		<div class="map_shadow"></div>
+		<div id="map"></div>
 	</div>
 	<div class="copyright_wrapper">
 		<div class="copyright_inner">&copy; 2012 - 2015.</div>
@@ -473,9 +462,290 @@
 </footer>
 <!--end-footer-->
 
-<div id="thanks" class="thanks modal">
-	<b>Thanks for contacting us</b>
+<!--modals-->
+<div class="modal modal_request" id="modal_request">
+	<div class="modal_inner">
+		<div class="modal_title">Отправить заявку</div>
+		<div class="main_form">
+			<form id="form3" onsubmit='return false' autocomplete="off" >
+	 			<label>Введите Имя</label>
+	 			<input type="text" name="uname" class="validate" placeholder="Иван Иван Иванович" >
+	 			<label>Введите Телефон</label>
+	 			<div class="input_phone">
+		            <input type="text" name="phone1" value="+7" >
+		            <input type="text" name="phone2" class="validate" placeholder="123" >
+		            <input type="text" name="phone3" class="validate" placeholder="4567890" >
+		        </div>    
+	           	<button  class="button send_button"  rel='form3' >Отправить заявку</button>
+				<small>Ваши данные не будут переданы третьим лицам или <br> использованы в спам рассылках</small>
+	            <input class="form_name" type="hidden" name="form_name" value="Заявка"/>
+	            <input type="hidden" name="action" value='send_form'/>
+	            <input type="hidden" name="action_type" value='form_feedback'/>
+	        </form>
+	    </div>    
+	</div>
 </div>
 
+<!--modal product-->
+<div class="modal modal_product" id="modal_product">
+	<div class="modal_inner">
+		<div class="modal_title">Аппарат Машковского 12 и 20 литров</div>
+		<div class="modal_product_block">
+			<div class="modal_product_img">
+				<ul id="modal_product_slider1">
+					<li><img src="img/modal_slider_img.png" alt=""></li>
+					<li><img src="img/modal_slider_img.png" alt=""></li>
+					<li><img src="img/modal_slider_img.png" alt=""></li>
+				</ul>
+				<div class="text_center">
+					<div id="modal_product_left1" class="modal_product_left"></div>
+					<div id="modal_product_right1" class="modal_product_right"></div>
+				</div>	
+			</div>
+			<div class="modal_product_txt">
+				<div class="modal_product_txt_imgs">
+					<a href="#"><img src="img/modal_img1.jpg" alt=""></a>
+					<a href="#"><img src="img/modal_img2.jpg" alt=""></a>
+					<a href="#"><img src="img/modal_img3.jpg" alt=""></a>
+					<a href="#"><img src="img/modal_img4.jpg" alt=""></a>
+					<a href="#"><img src="img/modal_img5.jpg" alt=""></a>
+				</div>
+				<div class="modal_product_txt_inner">
+					<div class="modal_product_txt_table">
+						<strong>Характеристики:</strong>
+						<table>
+							<tr>
+								<td>Объем перегонного куба</td>
+								<td>12 л</td>
+							</tr>
+							<tr>
+								<td>Тип охладителя</td>
+								<td>проточный</td>
+							</tr>
+							<tr>
+								<td>Производительность</td>
+								<td>2л/ч</td>
+							</tr>
+							<tr>
+								<td>Термометр</td>
+								<td>есть</td>
+							</tr>
+							<tr>
+								<td>Сухопарник</td>
+								<td>есть</td>
+							</tr>
+							<tr>
+								<td>Материал</td>
+								<td>пищевая нержавейка</td>
+							</tr>
+							<tr>
+								<td>Гарантия</td>
+								<td>1 год</td>
+							</tr>
+						</table>
+					</div>
+					<div class="main_form">
+						<form id="form4" onsubmit='return false' autocomplete="off" >
+				 			<label>Введите Имя</label>
+				 			<input type="text" name="uname" class="validate" placeholder="Иван Иван Иванович" >
+				 			<label>Введите Телефон</label>
+				 			<div class="input_phone">
+					            <input type="text" name="phone1" value="+7" >
+					            <input type="text" name="phone2" class="validate" placeholder="123" >
+					            <input type="text" name="phone3" class="validate" placeholder="4567890" >
+					        </div>    
+				           	<button  class="button send_button"  rel='form4' >Купить аппарат</button>
+				            <input class="form_name" type="hidden" name="form_name" value="Заявка"/>
+				            <input type="hidden" name="action" value='send_form'/>
+				            <input type="hidden" name="action_type" value='form_feedback'/>
+				        </form>
+				    </div>  
+				</div>
+			</div>
+		</div>  
+		<article>
+			Самогонный аппарат "Магарыч Премиум" - это не просто дистиллятор, это лучший из лучших в своей серии. Идеальный подарок как другу, так и руководителю. Отличный внешний вид, лаконичная форма и отражающая поверхность придает и без того качественному аппарату дополнительный шарм. Дистиллятор доставляется в защитной упаковке и красивой стильной подарочной коробке - уже готовый подарок!
+		</article>
+	</div>
+</div>
+
+<div class="modal modal_product" id="modal_product2">
+	<div class="modal_inner">
+		<div class="modal_title">Аппарат Машковского 12 и 20 литров</div>
+		<div class="modal_product_block">
+			<div class="modal_product_img">
+				<ul  id="modal_product_slider2">
+					<li><img src="img/modal_slider_img.png" alt=""></li>
+					<li><img src="img/modal_slider_img.png" alt=""></li>
+					<li><img src="img/modal_slider_img.png" alt=""></li>
+				</ul>
+				<div class="text_center">
+					<div id="modal_product_left2" class="modal_product_left"></div>
+					<div id="modal_product_right2" class="modal_product_right"></div>
+				</div>	
+			</div>
+			<div class="modal_product_txt">
+				<div class="modal_product_txt_imgs">
+					<a href="#"><img src="img/modal_img1.jpg" alt=""></a>
+					<a href="#"><img src="img/modal_img2.jpg" alt=""></a>
+					<a href="#"><img src="img/modal_img3.jpg" alt=""></a>
+					<a href="#"><img src="img/modal_img4.jpg" alt=""></a>
+					<a href="#"><img src="img/modal_img5.jpg" alt=""></a>
+				</div>
+				<div class="modal_product_txt_inner">
+					<div class="modal_product_txt_table">
+						<strong>Характеристики:</strong>
+						<table>
+							<tr>
+								<td>Объем перегонного куба</td>
+								<td>12 л</td>
+							</tr>
+							<tr>
+								<td>Тип охладителя</td>
+								<td>проточный</td>
+							</tr>
+							<tr>
+								<td>Производительность</td>
+								<td>2л/ч</td>
+							</tr>
+							<tr>
+								<td>Термометр</td>
+								<td>есть</td>
+							</tr>
+							<tr>
+								<td>Сухопарник</td>
+								<td>есть</td>
+							</tr>
+							<tr>
+								<td>Материал</td>
+								<td>пищевая нержавейка</td>
+							</tr>
+							<tr>
+								<td>Гарантия</td>
+								<td>1 год</td>
+							</tr>
+						</table>
+					</div>
+					<div class="main_form">
+						<form id="form5" onsubmit='return false' autocomplete="off" >
+				 			<label>Введите Имя</label>
+				 			<input type="text" name="uname" class="validate" placeholder="Иван Иван Иванович" >
+				 			<label>Введите Телефон</label>
+				 			<div class="input_phone">
+					            <input type="text" name="phone1" value="+7" >
+					            <input type="text" name="phone2" class="validate" placeholder="123" >
+					            <input type="text" name="phone3" class="validate" placeholder="4567890" >
+					        </div>    
+				           	<button  class="button send_button"  rel='form5' >Купить аппарат</button>
+				            <input class="form_name" type="hidden" name="form_name" value="Заявка"/>
+				            <input type="hidden" name="action" value='send_form'/>
+				            <input type="hidden" name="action_type" value='form_feedback'/>
+				        </form>
+				    </div>  
+				</div>
+			</div>
+		</div>  
+		<article>
+			Самогонный аппарат "Магарыч Премиум" - это не просто дистиллятор, это лучший из лучших в своей серии. Идеальный подарок как другу, так и руководителю. Отличный внешний вид, лаконичная форма и отражающая поверхность придает и без того качественному аппарату дополнительный шарм. Дистиллятор доставляется в защитной упаковке и красивой стильной подарочной коробке - уже готовый подарок!
+		</article>
+	</div>
+</div>
+
+<div class="modal modal_product" id="modal_product3">
+	<div class="modal_inner">
+		<div class="modal_title">Аппарат Машковского 12 и 20 литров</div>
+		<div class="modal_product_block">
+			<div class="modal_product_img">
+				<ul id="modal_product_slider3">
+					<li><img src="img/modal_slider_img.png" alt=""></li>
+					<li><img src="img/modal_slider_img.png" alt=""></li>
+					<li><img src="img/modal_slider_img.png" alt=""></li>
+				</ul>
+				<div class="text_center">
+					<div id="modal_product_left3" class="modal_product_left"></div>
+					<div id="modal_product_right3" class="modal_product_right"></div>
+				</div>	
+			</div>
+			<div class="modal_product_txt">
+				<div class="modal_product_txt_imgs">
+					<a href="#"><img src="img/modal_img1.jpg" alt=""></a>
+					<a href="#"><img src="img/modal_img2.jpg" alt=""></a>
+					<a href="#"><img src="img/modal_img3.jpg" alt=""></a>
+					<a href="#"><img src="img/modal_img4.jpg" alt=""></a>
+					<a href="#"><img src="img/modal_img5.jpg" alt=""></a>
+				</div>
+				<div class="modal_product_txt_inner">
+					<div class="modal_product_txt_table">
+						<strong>Характеристики:</strong>
+						<table>
+							<tr>
+								<td>Объем перегонного куба</td>
+								<td>12 л</td>
+							</tr>
+							<tr>
+								<td>Тип охладителя</td>
+								<td>проточный</td>
+							</tr>
+							<tr>
+								<td>Производительность</td>
+								<td>2л/ч</td>
+							</tr>
+							<tr>
+								<td>Термометр</td>
+								<td>есть</td>
+							</tr>
+							<tr>
+								<td>Сухопарник</td>
+								<td>есть</td>
+							</tr>
+							<tr>
+								<td>Материал</td>
+								<td>пищевая нержавейка</td>
+							</tr>
+							<tr>
+								<td>Гарантия</td>
+								<td>1 год</td>
+							</tr>
+						</table>
+					</div>
+					<div class="main_form">
+						<form id="form6" onsubmit='return false' autocomplete="off" >
+				 			<label>Введите Имя</label>
+				 			<input type="text" name="uname" class="validate" placeholder="Иван Иван Иванович" >
+				 			<label>Введите Телефон</label>
+				 			<div class="input_phone">
+					            <input type="text" name="phone1" value="+7" >
+					            <input type="text" name="phone2" class="validate" placeholder="123" >
+					            <input type="text" name="phone3" class="validate" placeholder="4567890" >
+					        </div>    
+				           	<button  class="button send_button"  rel='form6' >Купить аппарат</button>
+				            <input class="form_name" type="hidden" name="form_name" value="Заявка"/>
+				            <input type="hidden" name="action" value='send_form'/>
+				            <input type="hidden" name="action_type" value='form_feedback'/>
+				        </form>
+				    </div>  
+				</div>
+			</div>
+		</div>  
+		<article>
+			Самогонный аппарат "Магарыч Премиум" - это не просто дистиллятор, это лучший из лучших в своей серии. Идеальный подарок как другу, так и руководителю. Отличный внешний вид, лаконичная форма и отражающая поверхность придает и без того качественному аппарату дополнительный шарм. Дистиллятор доставляется в защитной упаковке и красивой стильной подарочной коробке - уже готовый подарок!
+		</article>
+	</div>
+</div>
+<!--end modal product-->
+
+<div id="thanks" class="thanks modal">
+	<div class="thanks_inner">
+		<figure>
+			<img src="img/thanks.png" alt="">
+		</figure>
+		<section>
+			<h5>СПАСИБО!</h5>
+			<h6>Ваша заявка принята</h6>
+			<p>Наш менеджер свяжется с Вами в ближайшее время</p>
+		</section>
+	</div>
+</div>
+<!--end modals-->
 </body>
 </html>
