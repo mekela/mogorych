@@ -5,7 +5,7 @@
 			${$key} = $val;
 		}
 		
-		$to  = "site@site.com" ;		
+		$to  = "sania_free@i.ua" ;		
 		$from  = "site@site.com" ;		
 
 		

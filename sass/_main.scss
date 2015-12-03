@@ -304,6 +304,8 @@
 				float: left;
 				width: 407px;
 				position: relative;
+				padding-top: 18px;
+				top: 3px;
 				figcaption{
 					color: #fff;
 					font-size: 24px;
@@ -321,7 +323,7 @@
 				color: #6b7989;
 				line-height: 20px;
 				font-size: 15px;
-				p{
+				p, ul{
 					padding-bottom: 15px;
 				}
 				strong{
@@ -506,13 +508,14 @@
 			float: left;
 			min-height: 20px;
 			.bx-wrapper .bx-viewport{
-				height: 295px !important;
+				height: 291px !important;
 				li{
 					width: 231px !important;
 				}				
 			}
 			.bx-wrapper img{
 				max-width: auto;
+				margin: 0 auto;
 			}
 		}
 		.modal_product_txt{
