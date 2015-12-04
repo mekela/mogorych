@@ -8,6 +8,9 @@ $(document).ready(function() {
 		}
 	});
 
+	//wow
+	new WOW().init();
+	
 	//bxslider
 	$('#modal_product_slider1').bxSlider({
 	  nextSelector: '#modal_product_right1',

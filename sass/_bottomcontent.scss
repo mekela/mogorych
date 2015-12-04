@@ -75,6 +75,16 @@
 		.buy_aparat_img {
 	    margin-bottom: 25px;
 	    text-align: center;
+	    img{
+	    	transition: all 0.5s ease;
+	    }
+	    img:hover{
+	    	-moz-transform: scale(1.2);
+			-webkit-transform: scale(1.2);
+			-o-transform: scale(1.2);
+			-ms-transform: scale(1.2);
+			transform: scale(1.2);
+	    }
 		}
 		.buy_aparat_footer {
 			background: #f6f6f7;
@@ -114,12 +124,25 @@
     padding-right: 25px;
     padding-top: 10px;
 	}
+		.bottle{
+			position: absolute;
+			top: 19px;
+   			left: 112px;
+			transition: all 0.5s ease;
+			&:hover{
+				transform: scale(1.05);
+			}
+		}
 		.action_title {
 			color: #23a4f4;
 			font-size: 64px;
 			font-family: $bold;
 			float: right;
 			margin-bottom: -10px;
+			transition: all 0.5s ease;
+			&:hover{
+				transform: scale(1.05);
+			}
 		}
 		.action_description {
 			color: #6c7a89;
