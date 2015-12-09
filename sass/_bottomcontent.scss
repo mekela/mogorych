@@ -228,15 +228,7 @@
  .contacts_wrapper {
 	height: 520px;
 	position: relative;
- }
- 	.map_shadow {
-	height: 60px;
-	position: absolute;
-	top: 0;
-	left: 0;
-	z-index: 2;
-	overflow: hidden;
-	width: 100%;
+
 		&:before {
 	    content: '';
 	    position: absolute;
