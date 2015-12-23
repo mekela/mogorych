@@ -106,7 +106,7 @@ if((d%2)==0){
 	var tl2 = new Date(y+'/'+m+'/'+d+' 23:59:59');
 }else{
 	if((d%1)==0){
-		var tl2 = new Date(y+'/'+m+'/'+(d+1)+' 23:59:59');
+		var tl2 = new Date(y+'/'+m+'/'+(d+0/*1*/)+' 23:59:59');
 	}
 }
 
@@ -115,7 +115,6 @@ var countdown = new Countdown({
 	msgBefore: "Скоро будет акция",
 	msgAfter: "Акция закончилась!",
 	msgPattern: "<span>{days}</span> <span>{hours}</span>  <span>{minutes}</span> <span>{seconds}</span>",
-	dateStart: new Date('2014/01/01 10:00'),
 	dateEnd: tl2,
 	onStart: function() {
    //console.log('Акция!');
