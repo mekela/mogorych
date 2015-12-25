@@ -66,7 +66,75 @@
 			<img src="img/form_items.png" class="form_img" alt="">
 			<form id="form1" onsubmit='return false' autocomplete="off" >
 				<h5>Оставьте заявку</h5>
-				<p>ПОЛУЧИТЕ САМЫЙ ПОЛНЫЙ КОМПЛЕКТ К КАЖДОМУ АППАРАТУ</p>
+				<p>ПОЛУЧИТЕ САМЫЙ ПОЛНЫЙ КОМПЛЕКТ К КАЖДОМУ АППАРАТУ
+					до <span class="time">
+							<?php
+							
+							echo rus_date("j F", strtotime("tomorrow"));
+							?>
+
+							<?php
+							function rus_date() {
+								$translate = array(
+								"am" => "дп",
+								"pm" => "пп",
+								"AM" => "ДП",
+								"PM" => "ПП",
+								"Monday" => "Понедельник",
+								"Mon" => "Пн",
+								"Tuesday" => "Вторник",
+								"Tue" => "Вт",
+								"Wednesday" => "Среда",
+								"Wed" => "Ср",
+								"Thursday" => "Четверг",
+								"Thu" => "Чт",
+								"Friday" => "Пятница",
+								"Fri" => "Пт",
+								"Saturday" => "Суббота",
+								"Sat" => "Сб",
+								"Sunday" => "Воскресенье",
+								"Sun" => "Вс",
+								"January" => "Января",
+								"Jan" => "Янв",
+								"February" => "Февраля",
+								"Feb" => "Фев",
+								"March" => "Марта",
+								"Mar" => "Мар",
+								"April" => "Апреля",
+								"Apr" => "Апр",
+								"May" => "Мая",
+								"May" => "Мая",
+								"June" => "Июня",
+								"Jun" => "Июн",
+								"July" => "Июля",
+								"Jul" => "Июл",
+								"August" => "Августа",
+								"Aug" => "Авг",
+								"September" => "Сентября",
+								"Sep" => "Сен",
+								"October" => "Октября",
+								"Oct" => "Окт",
+								"November" => "Ноября",
+								"Nov" => "Ноя",
+								"December" => "Декабря",
+								"Dec" => "Дек",
+								"st" => "ое",
+								"nd" => "ое",
+								"rd" => "е",
+								"th" => "ое"
+								);
+								
+								if (func_num_args() > 1) {
+									$timestamp = func_get_arg(1);
+									return strtr(date(func_get_arg(0), $timestamp), $translate);
+								} else {
+									return strtr(date(func_get_arg(0)), $translate);
+								}
+							}
+							?>
+						</span>
+				</p>
+				
 				<div class="timer timer_top">
 					<div id="timer"></div>
 					<nav>
@@ -291,7 +359,7 @@
 					<a href="#">Россияне переходят на «домашний» алкоголь</a>
 				</div>
 				<div class="news_video_block">
-					<iframe width="427" height="305" src="https://www.youtube.com/embed/BuzFw68X2K8"  allowfullscreen></iframe>
+					<iframe width="427" height="305" src="https://www.youtube.com/embed/lsucUyNoIrc" frameborder="0" allowfullscreen></iframe>
 					<a href="#">В России выросли продажи самогонных аппаратов</a>
 				</div>
 			</div>
